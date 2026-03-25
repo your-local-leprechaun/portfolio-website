@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Wulf — Game Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ── Navigation ── -->
+    <nav id="navbar">
+        <a class="nav-logo" href="#hero"><span>wulf</span>.uno</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="nav-cta" href="https://games.wulf.uno" target="_blank" rel="noopener">Play My Games ↗</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <div class="hero-tag">Available for work</div>
+                    <h1 class="hero-name">Luke <span class="hero-name-accent">Wulf</span></h1>
+                    <p class="hero-role" id="heroRole"><span class="typed-text"></span><span class="typed-cursor"></span></p>
+                    <p class="hero-desc">
+                        Software engineer with a focus on gameplay programming — writing the
+                        code that makes games feel right. I care about clean systems, tight
+                        mechanics, and the engineering craft behind great player experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a class="btn btn-primary" href="#work">View My Work</a>
+                        <a class="btn btn-outline" href="https://games.wulf.uno" target="_blank" rel="noopener">Games Hub ↗</a>
+                        <a class="btn btn-ghost" href="assets/resume.pdf" download>Resume ↓</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">12+</div>
+                            <div class="stat-label">Projects shipped</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Game Jams entered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">∞</div>
+                            <div class="stat-label">Bugs created</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── About ── -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="section-label">// about me</p>
+                    <h2 class="section-title">Writing the code<br>that makes games feel right.</h2>
+                    <p>
+                        I'm a <span class="about-highlight">software engineer</span> aiming for a career in
+                        <span class="about-highlight">gameplay programming</span> — the discipline of translating
+                        design intent into responsive, polished player-facing systems. Movement, combat,
+                        physics interactions, game feel: that's where I want to live.
+                    </p>
+                    <p>
+                        My background covers both the engineering side — data structures, OOP, engine architecture —
+                        and enough game design literacy to understand <em>why</em> something should feel a certain way,
+                        not just how to code it.
+                    </p>
+                    <p>
+                        <!-- TODO: add a personal touch — where you are, your background, what kinds of games you love making -->
+                        When I'm not writing code, I'm pulling games apart in my head to figure out
+                        how they work under the hood.
+                    </p>
+                </div>
+
+                <div class="about-aside reveal">
+                    <div class="panel info-block">
+                        <div class="info-block-label">Target Role</div>
+                        <div class="info-block-value">Gameplay Programmer</div>
+                        <div class="info-block-sub">Movement · Combat · Game Feel · Systems</div>
+                    </div>
+                    <div class="panel info-block">
+                        <div class="info-block-label">Primary Stack</div>
+                        <!-- TODO: update engine/tools -->
+                        <div class="info-block-value">C# · Unity / Godot</div>
+                        <div class="info-block-sub">OOP · Data Structures · Engine Internals</div>
+                    </div>
+                    <div class="panel info-block">
+                        <div class="info-block-label">Also builds</div>
+                        <div class="info-block-value">Web &amp; tools</div>
+                        <div class="info-block-sub">HTML · CSS · JavaScript</div>
+                    </div>
+                    <div class="panel info-block">
+                        <div class="info-block-label">Find my games</div>
+                        <div class="info-block-value"><a href="https://games.wulf.uno" style="color:var(--accent)">games.wulf.uno</a></div>
+                        <div class="info-block-sub">+ itch.io and more</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Skills ── -->
+    <section id="skills">
+        <div class="container">
+            <div class="skills-header reveal">
+                <div>
+                    <p class="section-label">// skills &amp; tools</p>
+                    <h2 class="section-title">What I work with</h2>
+                </div>
+                <p class="section-desc" style="margin:0">
+                    My programming stack, the engines I build in, and the tools around them.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- TODO: adjust skill names, levels (0–100), and tags to match your actual stack -->
+                <div class="panel skill-card reveal">
+                    <div class="skill-card-top">
+                        <div class="skill-icon">🎮</div>
+                        <div>
+                            <div class="skill-name">Unity</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="88"></div></div>
+                    <div class="skill-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">Physics</span>
+                        <span class="tag">UI Toolkit</span>
+                        <span class="tag">ShaderGraph</span>
+                    </div>
+                </div>
+
+                <div class="panel skill-card reveal">
+                    <div class="skill-card-top">
+                        <div class="skill-icon">🤖</div>
+                        <div>
+                            <div class="skill-name">Godot</div>
+                            <div class="skill-level">Proficient</div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="72"></div></div>
+                    <div class="skill-tags">
+                        <span class="tag">GDScript</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">2D &amp; 3D</span>
+                    </div>
+                </div>
+
+                <div class="panel skill-card reveal">
+                    <div class="skill-card-top">
+                        <div class="skill-icon">💻</div>
+                        <div>
+                            <div class="skill-name">C# / C++</div>
+                            <div class="skill-level">Strong</div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+                    <div class="skill-tags">
+                        <span class="tag">OOP</span>
+                        <span class="tag">Data structures</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                </div>
+
+                <div class="panel skill-card reveal">
+                    <div class="skill-card-top">
+                        <div class="skill-icon">🎨</div>
+                        <div>
+                            <div class="skill-name">Game Design</div>
+                            <div class="skill-level">Experienced</div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="75"></div></div>
+                    <div class="skill-tags">
+                        <span class="tag">Systems</span>
+                        <span class="tag">Level design</span>
+                        <span class="tag">Prototyping</span>
+                    </div>
+                </div>
+
+                <div class="panel skill-card reveal">
+                    <div class="skill-card-top">
+                        <div class="skill-icon">🌐</div>
+                        <div>
+                            <div class="skill-name">Web Dev</div>
+                            <div class="skill-level">Comfortable</div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="65"></div></div>
+                    <div class="skill-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="panel skill-card reveal">
+                    <div class="skill-card-top">
+                        <div class="skill-icon">🔧</div>
+                        <div>
+                            <div class="skill-name">Tooling</div>
+                            <div class="skill-level">Self-sufficient</div>
+                        </div>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Aseprite</span>
+                        <span class="tag">Blender</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Work ── -->
+    <section id="work">
+        <div class="container">
+            <div class="work-header reveal">
+                <div>
+                    <p class="section-label">// selected work</p>
+                    <h2 class="section-title">Projects &amp; Games</h2>
+                </div>
+            </div>
+
+            <!-- Featured: games hub -->
+            <div class="panel project-card-featured reveal">
+                <div class="featured-inner">
+                    <div>
+                        <div class="featured-badge">Featured</div>
+                        <p class="project-type">// games hub</p>
+                        <h3 class="project-title featured-title">games.wulf.uno</h3>
+                        <p class="project-desc featured-desc">
+                            My dedicated games portal — a landing page for everything I've shipped:
+                            browser games, itch.io releases, jam entries, and works in progress.
+                            If you want to play something I made, start here.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="tag">Browser Games</span>
+                            <span class="tag">itch.io</span>
+                            <span class="tag">Game Jams</span>
+                        </div>
+                    </div>
+                    <div class="featured-actions">
+                        <!-- TODO: add GitHub repo link -->
+                        <a class="project-btn" href="#" target="_blank" rel="noopener">View ↗</a>
+                        <a class="project-btn play" href="https://games.wulf.uno" target="_blank" rel="noopener">Play ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Three project cards -->
+            <div class="projects-grid">
+
+                <!-- Card 1 — TODO: fill in your project details -->
+                <div class="panel project-card reveal">
+                    <p class="project-type">// game jam</p>
+                    <h3 class="project-title">Project Title</h3>
+                    <p class="project-desc">
+                        Short description of this game or project — what it is, what makes it interesting,
+                        what you learned or built.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-stack">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="project-btn" href="#" target="_blank" rel="noopener">View ↗</a>
+                            <a class="project-btn play" href="#" target="_blank" rel="noopener">Play ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 — TODO: fill in your project details -->
+                <div class="panel project-card reveal">
+                    <p class="project-type">// personal project</p>
+                    <h3 class="project-title">Project Title</h3>
+                    <p class="project-desc">
+                        Short description of this game or project — what it is, what makes it interesting,
+                        what you learned or built.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-stack">
+                            <span class="tag">Godot</span>
+                            <span class="tag">GDScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="project-btn" href="#" target="_blank" rel="noopener">View ↗</a>
+                            <a class="project-btn play" href="#" target="_blank" rel="noopener">Play ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 — TODO: fill in your project details -->
+                <div class="panel project-card reveal">
+                    <p class="project-type">// personal project</p>
+                    <h3 class="project-title">Project Title</h3>
+                    <p class="project-desc">
+                        Short description of this game or project — what it is, what makes it interesting,
+                        what you learned or built.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-stack">
+                            <span class="tag">Godot</span>
+                            <span class="tag">GDScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="project-btn" href="#" target="_blank" rel="noopener">View ↗</a>
+                            <a class="project-btn play" href="#" target="_blank" rel="noopener">Play ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="reveal">
+                    <p class="section-label">// contact</p>
+                    <h2 class="section-title">Let's talk.</h2>
+                    <p class="contact-form-note">
+                        Whether you're a studio with an open role, a fellow developer looking to collaborate,
+                        or someone who wants to talk games — feel free to reach out.
+                    </p>
+                    <p class="contact-form-note">
+                        The fastest way to reach me is by email or on one of the platforms below.
+                    </p>
+                </div>
+
+                <div class="reveal">
+                    <div class="contact-links">
+                        <!-- TODO: replace placeholders with your real links -->
+                        <a class="contact-link" href="mailto:hello@wulf.uno">
+                            <div class="contact-link-icon">✉</div>
+                            <div>
+                                <div class="contact-link-label">Email</div>
+                                <div class="contact-link-value">hello@wulf.uno</div>
+                            </div>
+                        </a>
+                        <a class="contact-link" href="https://github.com/" target="_blank" rel="noopener">
+                            <div class="contact-link-icon">⌨</div>
+                            <div>
+                                <div class="contact-link-label">GitHub</div>
+                                <div class="contact-link-value">github.com/yourhandle</div>
+                            </div>
+                        </a>
+                        <a class="contact-link" href="https://itch.io/" target="_blank" rel="noopener">
+                            <div class="contact-link-icon">🎮</div>
+                            <div>
+                                <div class="contact-link-label">itch.io</div>
+                                <div class="contact-link-value">yourname.itch.io</div>
+                            </div>
+                        </a>
+                        <a class="contact-link" href="https://linkedin.com/" target="_blank" rel="noopener">
+                            <div class="contact-link-icon">🔗</div>
+                            <div>
+                                <div class="contact-link-label">LinkedIn</div>
+                                <div class="contact-link-value">linkedin.com/in/yourname</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer>
+        <div class="footer-copy">
+            &copy; <span id="year"></span> <span>Luke Wulf</span> — wulf.uno
+        </div>
+        <div class="footer-links">
+            <a href="https://games.wulf.uno" target="_blank" rel="noopener">Games</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
